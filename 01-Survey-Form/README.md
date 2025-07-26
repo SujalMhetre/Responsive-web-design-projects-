@@ -33,4 +33,5 @@ To view the project locally:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/SujalMhetre/01-Survey-Form.git
+   git clone https://github.com/SujalMhetre/Responsive-web-design-projects-.git
+   cd Responsive-web-design-projects/01-survey-form
