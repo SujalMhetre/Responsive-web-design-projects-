@@ -1,0 +1,25 @@
+body{
+  font-family:Arial, sans-serif;
+  margin:20px;
+  background:#fff;
+}
+
+form{
+  background:#fff;
+  padding:20px;
+  border-radius:10px;
+  max-width:500px;
+  margin:auto;
+}
+
+label,p{
+display:block;
+margin-top:15px;
+}
+
+input,select,textarea{
+width:100%;
+padding:8px;
+margin-top:5px;
+box-sizing:border-box;
+}

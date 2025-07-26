@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title> Survey Form </title>
+        <link rel="stylesheet" href="styles.css">  
+        </head> 
+      <body>
+<h1 id="title">Student Feedback Form </h1>
+<p id="description">We value your feedback. Please fill out this quick survey.</p>
+<form id="survey-form">
+  <label id="name-label" for="name" >Full Name </label>
+  <input id="name" type="text" required placeholder="Enter your full name"> 
+  <label id="email-label" for="email">Email</label>
+    <input id="email" type="email" required placeholder="Enter your email"> 
+    <label id="number-label" for="number">Age </label>
+    <input id="number" type="number" name="age" min="13" max="120" placeholder="Enter your age" >
+    <label for="dropdown">what describes you best?</label>
+    <select id="dropdown">
+      <option value="">(select one) </option>
+        <option value="student">Student</option>
+        <option value="graduate">Graduate</option>
+          </select>
+          <p>How did you find us?</p>
+          <label>
+            <input type="radio" name="referral" value="friends">Friends
+            </label>
+            <label>
+              <input type="radio" name="referral" value="social-media">Social Media
+              </label>
+              <p>what topic do you want us to cover more?</p>
+              <label>
+                <input type="checkbox" value="html">HTML
+                </label>
+                <label>
+                <input type="checkbox" value="css">CSS
+                </label>
+                <label>
+                <input type="checkbox" value="javascript">Javascript
+                </label>
+                <p> Additional Comments:</p>
+                <textarea rows="4" cols="30" placeholder="Your Feedback..."></textarea>
+                <button id="submit" type="submit">Submit </button>
+  </form >
+        </body>
+      </html>
+      
