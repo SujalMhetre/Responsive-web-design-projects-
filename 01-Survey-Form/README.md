@@ -33,4 +33,4 @@ To view the project locally:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/SujalMhetre/Survey Form.git
+   git clone https://github.com/SujalMhetre/01-Survey-Form.git
