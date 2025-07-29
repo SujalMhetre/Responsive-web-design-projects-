@@ -5,6 +5,7 @@ This repository contains the projects I built while completing the freeCodeCamp 
 ## Projects Completed
 
 1. [Survey Form](./01-survey-form)
+2. [Tribute Page](./02-Tribute-Page/)
 
 ## How to View
 
