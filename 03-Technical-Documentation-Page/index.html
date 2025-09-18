@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>Python Documentation</header>
+        <ul id="ul-navbar">
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#What_you_should_already_know">What you should already know</a>
+            </li>
+            <li><a class="nav-link" href="#Python_vs_Other_Languages">Python vs Other Languages</a></li>
+            <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
+            <li><a class="nav-link" href="#Declaring_Variables">Declaring variables</a></li>
+            <li><a class="nav-link" href="#Variable_Scope">Variable scope</a></li>
+            <li><a class="nav-link" href="#Global_Scope">Global Scope</a></li>
+            <li><a class="nav-link" href="#Constants">Constants</a></li>
+            <li><a class="nav-link" href="#Data_Types">Data types</a></li>
+            <li><a class="nav-link" href="#if...else_Statement">if...else Statement</a></li>
+            <li><a class="nav-link" href="#while_Loop">while loop</a></li>
+            <li><a class="nav-link" href="#Function_Declarations">Function declarations</a></li>
+            <li><a class="nav-link" href="#Reference">Reference</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <p>Python is a high-level, interpreted, object-oriented programming language with dynamic
+                semantics. Its high-level built-in data structures, combined with dynamic typing and
+                dynamic binding, make it very attractive for Rapid Application Development.</p>
+            <p>Python supports modules and packages, which encourages program modularity and code reuse. The
+                Python interpreter and the extensive standard library are available in source or binary
+                form for most major platforms.</p>
+
+        </section>
+
+        <section class="main-section" id="What_you_should_already_know">
+            <header>What you should already know</header>
+            <p>This guide assumes you have the following background:</p>
+            <ul>
+                <li>Basic understanding of computer operations and text editors.</li>
+                <li>Some familiarity with programming concepts like loops and variables.</li>
+                <li>Knowledge of HTML or JavaScript is optional but can help with understanding syntax
+                    similarities and differences.</li>
+            </ul>
+
+        </section>
+
+        <section class="main-section" id="Python_vs_Other_Languages">
+            <header>Python vs Other Languages</header>
+            <p>Python emphasizes readability and simplicity, often requiring fewer lines of code than other
+                languages like C++ or Java. Unlike Java, Python doesn't use curly braces or semicolons
+                to denote blocks — instead, it relies on indentation.</p>
+            <p>While JavaScript runs primarily in browsers, Python is more general-purpose and is used in
+                web development, automation, AI, data science, and more.</p>
+
+        </section>
+
+        <section class="main-section" id="Hello_world">
+            <header>Hello world</header>
+            <p>To write your first Python program, open any text editor, type the following, and save the
+                file with a .py extension:</p>
+            <code>print("Hello, World!")</code>
+            <p>Run it using:</p>
+            <code>python your_file.py</code>
+
+        </section>
+
+        <section class="main-section" id="Declaring_Variables">
+            <header>Declaring Variables</header>
+            <p>In Python, you create variables simply by assigning a value. There’s no need to specify the
+                type, as Python uses dynamic typing.</p>
+            <code>
+                                x = 10           # an integer
+                                name = "Alice"   # a string
+                                price = 99.99    # a float
+                                is_valid = True  # a boolean
+                        </code>
+            <p>Python automatically determines the type based on the value you assign.</p>
+        </section>
+        <section class="main-section" id="Variable_Scope">
+            <header>Variable Scope</header>
+            <p>Variables created inside a function exist only inside that function:</p>
+            <code>
+                                def greet():
+                                message = "Hi"
+                                print(message)
+                                greet()
+                                print(message)  # ❌ NameError: message is not defined
+                        </code>
+        </section>
+
+        <section class="main-section" id="Global_Scope">
+            <header>Global Scope</header>
+            <p>Variables declared outside any function are global:</p>
+            <code>
+                                count = 0
+                                def increment():
+                                global count
+                                count += 1
+                        </code>
+            <p>Use global only when absolutely necessary — it makes code harder to maintain.</p>
+        </section>
+
+        <section class="main-section" id="Constants">
+            <header>Constants</header>
+            <p>Python doesn’t have true constants, but by convention, constants are written in ALL_CAPS:</p>
+            <code>
+                                PI = 3.14159
+                                MAX_USERS = 100
+                        </code>
+            <p>This is only a naming rule — Python will still let you reassign PI later, so discipline is on
+                you.</p>
+        </section>
+
+        <section class="main-section" id="Data_Types">
+            <header>Data Types</header>
+            <p>Python has several built-in types:</p>
+            <li>int – Integers (e.g., 10)</li>
+            <li>float – Decimal numbers (e.g., 3.14)</li>
+            <li>str – Strings or text (e.g., "hello")</li>
+            <li>bool – Boolean values (True, False)</li>
+            <li>list – Ordered, mutable collections</li>
+            <li>tuple – Ordered, immutable collections</li>
+            <li>dict – Key-value mappings</li>
+            <li>set – Unordered, unique items</li>
+            <li>NoneType – Represents “no value” (None)</li>
+
+        </section>
+
+        <section class="main-section" id="if...else_Statement">
+            <header>if...else Statement</header>
+            <p>Used for decision-making:</p>
+            <code>
+                                x = 5
+                                if x > 0:
+                                print("Positive")
+                                elif x == 0:
+                                print("Zero")
+                                else:print("Negative")  
+                        </code>
+        </section>
+
+        <section class="main-section" id="while_Loop">
+            <header>while Loop</header>
+            <p>Repeats while a condition is True:</p>
+            <code>n = 0while n < 3: print(n)  n += 1</code>
+            <p>Use break to exit early and continue to skip the current iteration.</p>
+        </section>
+
+        <section class="main-section" id="Function_Declarations">
+            <header>Function Declarations</header>
+            <p>Functions are defined using def:</p>
+            <code>def add(a, b):return a + b</code>
+            <p>Python functions support:</p>
+            <ul>
+                <li> Default arguments</li>
+                <li>Variable-length arguments using *args and **kwargs</li>
+                <li>Multiple return values</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Reference">
+            <header>Reference</header>
+            <p>All content here follows standard Python syntax and behavior, curated for learning. For
+                in-depth knowledge, refer to the<a class=" " href="https://docs.python.org/3/"></a>official Python
+                documentation>.</p>
+        </section>
+
+
+    </main>
+
+</body>
+
+</html>

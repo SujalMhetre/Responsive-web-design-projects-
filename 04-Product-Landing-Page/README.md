@@ -1,6 +1,6 @@
 # Product Landing Page
 
-This is a **Student Feedback Survey Form** built using HTML5 and CSS3 as part of the [freeCodeCamp Responsive Web Design Certification](https://www.freecodecamp.org/learn/). The form is designed to collect feedback from students about their learning experience and preferences.
+This is a **Product Landing Page** built using HTML5 and CSS3 as part of the [freeCodeCamp Responsive Web Design Certification](https://www.freecodecamp.org/learn/). The form is designed to collect feedback from students about their learning experience and preferences.
 
 ## 📝 Features
 

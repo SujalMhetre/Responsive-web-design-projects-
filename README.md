@@ -6,6 +6,8 @@ This repository contains the projects I built while completing the freeCodeCamp 
 
 1. [Survey Form](./01-survey-form)
 2. [Tribute Page](./02-Tribute-Page/)
+3. [Technical Documentation Page](./03-Technical-Documentation-Page/)
+4. [Product Landing Page](./04-Product-Landing-Page/)
 
 ## How to View
 
