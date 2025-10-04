@@ -20,3 +20,4 @@ Each project is stored in its own folder and contains:
 
 ---
 More projects coming soon!
+
