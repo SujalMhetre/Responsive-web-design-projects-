@@ -8,6 +8,7 @@ This repository contains the projects I built while completing the freeCodeCamp 
 2. [Tribute Page](./02-Tribute-Page/)
 3. [Technical Documentation Page](./03-Technical-Documentation-Page/)
 4. [Product Landing Page](./04-Product-Landing-Page/)
+5. [Portfolio Page] (./05-Portfolio-Page/)
 
 ## How to View
 
