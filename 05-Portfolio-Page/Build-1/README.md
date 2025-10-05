@@ -1,4 +1,4 @@
-# 🌐 Personal Portfolio Website
+# 🌐 Personal Portfolio Website-1
 
 This is a **Personal Portfolio Website** built using **HTML5** and **CSS3**, inspired by an online template. It showcases my web development skills, projects, and contact information in a clean and interactive layout.
 
@@ -51,5 +51,5 @@ To view the project locally:
 
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/SujalMhetre/Responsive-web-design-projects-.git
-   cd Responsive-web-design-projects/Your-Portfolio-Project
+   git clone https://github.com/SujalMhetre/Responsive-web-design-projects/Build-1-.git
+   cd Responsive-web-design-projects/Build-1
