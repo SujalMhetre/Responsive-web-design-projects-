@@ -52,9 +52,10 @@ nav a {
     font-size: 0.8rem;
 }
 
-nav a:hover{
-    color:black;
+nav a:hover {
+    color: black;
 }
+
 /*Media Queries for header section */
 
 @media (min-width:769px) {
@@ -349,4 +350,4 @@ footer p {
     }
 }
 
-/* Footer section starts here */
+/* Footer section ends here */
