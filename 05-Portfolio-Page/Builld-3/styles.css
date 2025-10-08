@@ -33,8 +33,11 @@ header {
     z-index: 999;
 }
 
-#navbar input,
-button {
+#navbar input {
+    display: none;
+}
+
+#navbar button {
     display: none;
 }
 
@@ -47,7 +50,7 @@ button {
 
 #logo a {
     color: #f5f5f5;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     margin-right: 10px;
 }
 
@@ -66,7 +69,7 @@ button {
 
 /* navbar */
 #navbar i {
-    color:#f5f5f5;
+    color: #f5f5f5;
     font-size: 1.7rem;
     margin-top: 5px;
 }
@@ -91,8 +94,11 @@ button {
         padding-right: 10px;
     }
 
-    #navbar input,
-    button {
+    #navbar input {
+        display: inline-block;
+    }
+
+    #navbar button {
         display: inline-block;
     }
 
@@ -139,3 +145,275 @@ button {
 
 
 /* Header section ends here */
+
+
+
+/* Hero section starts here */
+#hero {
+    width: 100%;
+    background-color: #dadbef;
+    color: black;
+    margin-top: 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 120px 10px;
+    gap: 30px;
+}
+
+#hero h1 {
+    font-size: 2.3rem;
+}
+
+#hero input {
+    width: 100%;
+    min-height: 55px;
+    border: none;
+    border: 1.5px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+
+/* Media Queries */
+@media (min-width:769px) {
+
+
+    #hero h1 {
+        font-size: 4.5rem;
+    }
+
+    #hero input {
+        width: 50%;
+        min-height: 60px;
+    }
+}
+
+/* Hero section ends here */
+
+
+/* Services section starts here */
+#services {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 80px 15px;
+}
+
+#box {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    padding: 20px 0px;
+}
+
+#content {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#content h3 {
+    font-size: 1.5rem;
+}
+
+#content p {
+    font-size: 1.5rem;
+}
+
+#content a {
+    font-size: 1.25rem;
+    color: #4C5FD5;
+
+}
+
+#content i {
+    margin-left: 5px;
+}
+
+#image {
+    width: 30%;
+}
+
+#image img {
+    max-width: 65px;
+}
+
+/* Media Queries */
+@media (min-width:769px) {
+    #services {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #box {
+        width: 40%;
+        justify-content: space-around;
+    }
+
+    #image {
+        width: auto;
+    }
+
+    #image img {
+        max-width: 85px;
+    }
+
+}
+
+
+/* Services section ends here  */
+
+
+/* Footer section starts here */
+footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 50px 10px;
+    align-items: center;
+}
+
+#footer-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.box h3 {
+    font-size: 1.7rem;
+}
+
+.box a {
+    color: white;
+    font-size: 1.1rem;
+}
+
+.box li {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.box4 h5 {
+    font-size: 1.2rem;
+    margin-top: 30px;
+}
+
+.box4 a {
+    color: white;
+}
+
+.box4 li {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.box4 h3 {
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+}
+
+
+#footer-last {
+    width: 100%;
+    display: flex;
+}
+
+#footer-last-top {
+    width: 70%;
+}
+
+#footer-last-bottom {
+    width: 30%;
+}
+
+#footer-last p {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+#footer-last-top i {
+    display: inline-block;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+#help {
+    min-width: 120px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    padding: 10px;
+    background-color: #4C5FD5;
+    color: white;
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+}
+
+/* Media Queries */
+@media (min-width:769px) {
+
+    #footer-container {
+        width: 70%;
+        justify-content: space-around;
+
+    }
+
+    .box {
+        width: auto;
+
+    }
+
+    #footer-last {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 0px 50px;
+        gap: 10px;
+    }
+
+    #footer-last-top {
+        width: 30%;
+    }
+
+    #footer-last-bottom {
+        width: auto;
+    }
+
+    #help {
+        min-width: 120px;
+        border: none;
+        border-radius: 25px;
+        font-size: 1rem;
+        padding: 5px;
+        background-color: #4C5FD5;
+        color: white;
+        cursor: pointer;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+    }
+
+    #help i {
+        font-size: 25px;
+        margin-right: 5px;
+        margin-top: 5px;
+    }
+}
+
+/* Footer section starts here */
