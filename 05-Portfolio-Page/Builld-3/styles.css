@@ -8,6 +8,8 @@ html,
 body {
     height: 100%;
     width: 100%;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
 }
 
 ul {
@@ -16,6 +18,20 @@ ul {
 
 a {
     text-decoration: none;
+}
+
+a:hover {
+    color: #909eff;
+    text-decoration: underline;
+}
+button {
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+
 }
 
 /* Header section starts here */
@@ -55,7 +71,7 @@ header {
 }
 
 #home {
-    border-right: 2px solid#f5f5f5;
+    border-right: 2px solid #f5f5f5;
     padding-right: 10px;
     padding-bottom: 7px;
 
@@ -74,24 +90,21 @@ header {
     margin-top: 5px;
 }
 
-/* Media Queries */
-@media (min-width:769px) {
+/* Media Queries for Tablet*/
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
     header {
         align-items: center;
         justify-content: space-between;
-        padding: 20px 50px;
+        padding: 10px;
     }
 
-    #logo {
-        padding-bottom: 5px;
-    }
-
-    #logo a {
-        font-size: 1.7rem;
-    }
-
-    #home {
-        padding-right: 10px;
+    #navbar {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
     }
 
     #navbar input {
@@ -102,23 +115,13 @@ header {
         display: inline-block;
     }
 
-    #navbar {
-        width: 60%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-end;
-    }
-
     #navbar i {
         display: none;
     }
 
     .btn {
-        width: 100%;
-        max-width: 250px;
-        min-width: 200px;
-        min-height: 50px;
+        max-width: 180px;
+        min-height: 40px;
         padding: 7px 15px;
         border-radius: 7px;
         font-size: 1rem;
@@ -128,24 +131,69 @@ header {
     .btn2 {
         background-color: black;
         color: white;
-        border: 2px solid silver;
-        font-size: 1.4rem;
-        margin-left: 20px;
+        border: 1px solid silver;
     }
 
     .btn3 {
-        margin-left: 20px;
-        max-width: 150px;
-        min-width: 100px;
         background-color: #4C5FD5;
         color: white;
-        font-size: 1.5rem;
     }
 }
 
+/* Media Queries for desktop*/
+
+@media (min-width:1025px) {
+
+    header {
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 50px;
+    }
+
+    #logo a {
+        font-size: 1.7rem;
+    }
+
+    #navbar {
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+    }
+
+    #navbar input {
+        display: inline-block;
+    }
+
+    #navbar button {
+        display: inline-block;
+    }
+
+    #navbar i {
+        display: none;
+    }
+
+    .btn {
+        max-width: 200px;
+        min-height: 50px;
+        padding: 7px 15px;
+        border-radius: 7px;
+        font-size: 1.2rem;
+        border: none;
+    }
+
+    .btn2 {
+        background-color: black;
+        color: white;
+        border: 2px solid silver;
+    }
+
+    .btn3 {
+        background-color: #4C5FD5;
+        color: white;
+    }
+}
 
 /* Header section ends here */
-
 
 
 /* Hero section starts here */
@@ -176,8 +224,23 @@ header {
 }
 
 
-/* Media Queries */
-@media (min-width:769px) {
+/* Media Queries for Tablet*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    #hero h1 {
+        font-size: 3.5rem;
+    }
+
+    #hero input {
+        width: 80%;
+        min-height: 60px;
+    }
+}
+
+/* Media Queries for desktop*/
+
+@media (min-width:1025px) {
 
 
     #hero h1 {
@@ -185,7 +248,7 @@ header {
     }
 
     #hero input {
-        width: 50%;
+        width: 60%;
         min-height: 60px;
     }
 }
@@ -194,6 +257,7 @@ header {
 
 
 /* Services section starts here */
+
 #services {
     width: 100%;
     display: flex;
@@ -202,64 +266,85 @@ header {
     padding: 80px 15px;
 }
 
-#box {
+.card {
     display: flex;
     width: 90%;
     justify-content: center;
     padding: 20px 0px;
 }
 
-#content {
+.content {
     width: 70%;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-#content h3 {
+.content h3 {
     font-size: 1.5rem;
 }
 
-#content p {
+.content p {
     font-size: 1.5rem;
 }
 
-#content a {
+.content a {
     font-size: 1.25rem;
     color: #4C5FD5;
 
 }
 
-#content i {
+.content i {
     margin-left: 5px;
 }
 
-#image {
+.image {
     width: 30%;
 }
 
-#image img {
+.image img {
     max-width: 65px;
 }
 
-/* Media Queries */
-@media (min-width:769px) {
+/* Media Queries for Tablet*/
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    #services {
+        padding: 80px 20px;
+    }
+
+    .image {
+        width: auto;
+    }
+
+    .card {
+        justify-content: space-around;
+    }
+
+    .image img {
+        max-width: 75px;
+    }
+}
+
+/* Media Queries for desktop*/
+
+@media (min-width:1025px) {
     #services {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    #box {
+    .card {
         width: 40%;
         justify-content: space-around;
     }
 
-    #image {
+    .image {
         width: auto;
     }
 
-    #image img {
+    .image img {
         max-width: 85px;
     }
 
@@ -364,8 +449,60 @@ footer {
     right: 20px;
 }
 
-/* Media Queries */
-@media (min-width:769px) {
+/* Media Queries for Tablet*/
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    #footer-container {
+        width: 100%;
+        justify-content: space-around;
+        margin-bottom: 20px;
+    }
+
+    .box {
+        width: auto;
+    }
+
+    #footer-last {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 0px 80px;
+        gap: 10px;
+    }
+
+    #footer-last-top {
+        width: 30%;
+    }
+
+    #footer-last-bottom {
+        width: auto;
+    }
+
+    #help {
+        min-width: 120px;
+        border: none;
+        border-radius: 25px;
+        font-size: 1rem;
+        padding: 5px;
+        background-color: #4C5FD5;
+        color: white;
+        cursor: pointer;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+    }
+
+    #help i {
+        font-size: 25px;
+        margin-right: 5px;
+        margin-top: 5px;
+    }
+}
+
+/* Media Queries for desktop*/
+
+@media (min-width:1025px) {
 
     #footer-container {
         width: 70%;
